@@ -2,7 +2,10 @@
 
 #root {
   font-family: 'Poppins', sans-serif;
+  text-align: left;
+  
 }
+
 
 body{
   background-color: white;
@@ -54,20 +57,20 @@ li {
 }
 
 #wrong {
-  background-color:rgb(219, 93, 93);
+  background-color:rgb(214, 59, 59);
 }
 
 #correct {
-  background-color:rgb(191, 116, 191);
+  background-color:rgb(70, 200, 79);
 }
 
 .answer-space {
   text-align: center;
-  background-color: rgb(226, 195, 147);
+  background-color: #e2c393;
   height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: auto;
+  width: 180px;
   margin-bottom: 20px;
   border-radius: 15px;
   margin-left: auto;
@@ -92,6 +95,13 @@ button.newdrink {
   background-color: rgba(138, 98, 12, 0.942);
   font-weight: bold;
   color: white;
+  text-align: center;
+
+}
+.button.submit {
+  display: block; /* Makes the button a block-level element if it's not already */
+  margin: 0 auto; /* Centers the button horizontally */
+  /* Keep any existing styles you have for this button, only add `display` and `margin` as needed */
 }
 
 .title {

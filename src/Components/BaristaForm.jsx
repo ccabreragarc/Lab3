@@ -106,15 +106,13 @@ const BaristaForm = () => {
             {inputs["temperature"]}
           </div>
           <RecipeChoices
-            handleChange={(e) =>
-              setInputs((prevState) => ({
-                ...prevState,
-                [e.target.name]: e.target.value,
-              }))
-            }
+            handleChange={(e) => setInputs((prevState) => ({
+              ...prevState,
+              [e.target.name]: e.target.value,
+            }))}
             label="temperature"
             choices={ingredients["temperature"]}
-            currentVal={inputs["temperature"]}
+            checked={inputs["temperature"]}
           />
         </div>
         {/* Syrup */}
