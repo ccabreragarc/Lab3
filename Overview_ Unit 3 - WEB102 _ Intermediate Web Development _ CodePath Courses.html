@@ -1,0 +1,1437 @@
+<!DOCTYPE html><html lang="en-US"><head><title>Unit 3 - WEB102 | Intermediate Web Development | CodePath Courses</title><link href="/assets-compiled/application.css?v=5955841a" rel="stylesheet" type="text/css" /><link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /><link href="/skins/codepath?version=1694702531.css" rel="stylesheet" type="text/css" /><meta charset="UTF-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-06cb56c71ff89e98597","applicationID":"1481572453","transactionName":"dFpbEkQJClhQRhoyDVlUQRRXSSpRVEZbCApQZVoUQgcKDg91RRFLcHBhRlUJE0ZGUUZOXlRaQBRFA0lBW11BTl5CW1wS","queueTime":0,"applicationTime":287,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1588907617",accountID:"4100005",trustKey:"4100005",xpid:"UAcHUVZTDRABUFlTAgYFUlEC",licenseKey:"NRJS-06cb56c71ff89e98597",applicationID:"1481572453"};;/*! For license information please see nr-loader-spa-1.252.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>D,lF:()=>O,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>N});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},R={};function D(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function N(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function O(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.252.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>R,QU:()=>O,_L:()=>P,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",w=A+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function R(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,w),r(_[T],e,w)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const D={},N=["pushState","replaceState"];function O(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||D[t.debugId]++||(D[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var I=r(3239);const j={},C=["appendChild","insertBefore","replaceChild"];function P(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||j[t.debugId])return t;j[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,I.m$)(!1)),e.addEventListener("error",f,(0,I.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},F="setTimeout",B="setInterval",U="clearTimeout",V="-start",q="-",G=[F,"setImmediate",B,U,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,G.slice(0,2),F+q),r.inPlace(f._A,G.slice(2,3),B+q),r.inPlace(f._A,G.slice(3),U+q),t.on(B+V,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+V,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",w)}),(0,I.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",w)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",w),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function w(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{J0:()=>l,Mi:()=>d,Vb:()=>o,Ye:()=>s,fm:()=>c,i9:()=>a,t9:()=>i,u0:()=>u});var n=r(7056);const i=r(3325).D.sessionReplay,o=.12,a={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},s=1e6,c=64e3,u={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},l=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>w,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",w="-end",x="-body",E="cb"+w,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:w,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();w||(A=T.init,w=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,A||{}),(0,i.GE)(e.agentIdentifier,x||{}),w.jsAttributes??={},d.v6&&(w.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,w);const S=(0,i.P_)(e.agentIdentifier),R=[w.beacon,w.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),R.push(S.proxy.assets)),S.proxy.beacon&&R.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?R:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),w(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=w(m,e,!0,"api")})),h.addPageAction=w(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=w(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function w(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{A[e]=w(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.252.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-EIHTFh/PyMHLspjr+lbpdxFHzJXOF7HH8nedLZZTJSO0SyJ4rECM57ibYM67sib1O2FH0nhyrm4QKgl30mtD8w==",433:"sha512-wCJ0jwoj4FyJOrl6z7VLilNolSSxqqm/5L08FBzY2sXjVPFpnyu6p3obblBOv9lj2u9awQrvcEGqvjyYflheow==",164:"sha512-we5lwLCaVV8XgmWsFLhIuQ0Ja0mW9HH9YHLBzjhalvM84n3Rpvmg1iFz7BOZeYnHrjU5dcWOHrtqxvdjDNy2ag=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.0.PROD"]=self["webpackChunk:NRBA-1.252.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,m.D)(e,w)}function w(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),R=i(3239),D=i(7894),N=i(9251);class O extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,N.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var I=i(3081);class j extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var C=i(6660);class P{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=C.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,D.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,D.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,D.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,D.z)()],void 0,r.D.jserrors,this.ee))}),(0,R.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new P(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new P("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new P(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new P(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new P(e.message,e.filename,e.lineno,e.colno)}}var M=i(2210);let H=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,M.X)(e,L,(function(){return H++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class V{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var q=i(7825),G=["load","error","abort","timeout"],Z=G.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=q.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,q.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new V(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,R.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<Z;s++)r.addEventListener(G[s],this.listener,(0,R.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function w(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<Z;o++)e.removeEventListener(G[o],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,n){e.params.status=n.status;var i=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(n,e.lastSize);if(i&&(e.metrics.rxSize=i),e.sameOrigin){var o=n.getResponseHeader("X-NewRelic-App-Data");o&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,r.D.metrics,t),e.params.cat=o.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7056),ce=i(7144);class ue extends f{static featureName=ce.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ce.t9,r);try{const e=JSON.parse(localStorage.getItem("NRBA_SESSION"));e.sessionReplayMode!==se.IK.OFF?this.#a(e.sessionReplayMode):this.importAggregator({})}catch(e){this.importAggregator({})}}async#a(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.importAggregator({recorder:this.recorder})}}var de=i(7836);const{FEATURE_NAME:le,START:fe,END:he,BODY:pe,CB_END:ge,JS_TIME:me,FETCH:ve,FN_START:be,CB_START:ye,FN_END:Ae}=de;var we=i(4649);class xe extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[K,p,O,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ue,j,xe,k,class extends f{static featureName=le;constructor(e,t){if(super(e,t,le,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),f=(0,B.u5)(this.ee),h=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[be]=(0,D.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[me]=~~this[me]+e-this[be],this[Ae]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(be,m),s.on(ye,m),a.on(ye,m),this.ee.on(Ae,v),s.on(ge,v),a.on(ge,v),this.ee.buffer([be,Ae,"xhr-resolved"],this.featureName),d.buffer([be],this.featureName),c.buffer(["setTimeout"+he,"clearTimeout"+fe,be],this.featureName),u.buffer([be,"new-xhr","send-xhr"+fe],this.featureName),f.buffer([ve+fe,ve+"-done",ve+pe+fe,ve+pe+he],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([be],this.featureName),s.buffer(["propagate",ye,ge,"executor-err","resolve"+fe],this.featureName),o.buffer([be,"no-"+be],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,ve+fe),b(f,ve+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,R.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="noindex, nofollow" name="robots" /><script src="//js.honeybadger.io/v6.6/honeybadger.min.js" type="text/javascript"></script><script>Honeybadger.setContext({
+  user_id: "96406",
+  user_email: "ccabreragarc2023@fau.edu",
+});</script><script>Honeybadger.configure({
+  apiKey: "d6442453",
+  environment: "production",
+  revision: "5955841a34446e0b22d9b6029aca1be246c8e798",
+  enableUncaught: true,
+  debug: false,
+});
+// Ignore errors from Userway
+Honeybadger.beforeNotify((notice) => {
+  if (/userway/.test(notice.stack)) { return false; }
+});</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap" rel="stylesheet">
+<style> @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap'); </style>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C6WBPLRZK9"></script><script>// Google analytics setup
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('set', {"dimension1":"96406","dimension2":"219659","dimension3":"Cesar Cabrera Garcia","dimension4":"For-Credit-Intermediate-Web-Development-Spring-2024","dimension5":"Participant","dimension6":"4","dimension7":"true","dimension8":"true","dimension9":"40","dimension10":"571","dimension11":"6251"});
+gtag('config', 'G-C6WBPLRZK9', {"global_member_id":96406,"cohort_member_id":219659,"member_name":"Cesar Cabrera Garcia","cohort_name":"For-Credit-Intermediate-Web-Development-Spring-2024","current_role":"Participant","current_unit":4,"is_active_participant":true,"cohort_in_progress":true,"current_course":40,"current_cohort":571,"current_location":6251,"user_id":"96406"});
+
+// Send screen_view for initial page load.
+gtag('event', 'screen_view');
+
+// Alert browser issues!
+// https://browser-update.org/#test-bu
+var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
+function $buo_f(){
+ var e = document.createElement("script");
+ e.src = "//browser-update.org/update.min.js";
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+// Hotjar
+
+// <!-- Hotjar Tracking Code for codepath.org -->
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:2300813,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+// Userway - website accessibility widget
+(function(d){
+  var s = d.createElement("script");
+  /* uncomment the following line to override default position*/
+  s.setAttribute("data-position", 5);
+  /* uncomment the following line to override default size (values: small, large)*/
+  /* s.setAttribute("data-size", "small");*/
+  /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+  /* s.setAttribute("data-language", "language");*/
+  /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+  s.setAttribute("data-color", "#4F5DFF");
+  /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+  /* s.setAttribute("data-type", "1");*/
+  /* s.setAttribute("data-statement_text", "Our Accessibility Statement");*/
+  /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility");*/
+  /* uncomment the following line to override support on mobile devices*/
+  /* s.setAttribute("data-mobile", true);*/
+  /* uncomment the following line to set custom trigger action for accessibility menu*/
+  /* s.setAttribute("data-trigger", "triggerId")*/
+  s.setAttribute("data-account", "5L8xHh2cOG");
+  s.setAttribute("src", "https://cdn.userway.org/widget.js");
+  (d.body || d.head).appendChild(s);
+})(document)</script></head><body><div class="navbar navbar-default navbar-fixed-top hidden-print" id="main-nav"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">CodePath Courses</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Courses <b class="caret"></b></a><ul class="dropdown-menu scrollable-menu"><li class="active"><a href="/courses/web102">WEB102 | Intermediate Web Development</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;<span class="hidden-sm">Quick&nbsp;</span><span class="visible-xs-inline visible-lg-inline">Links&nbsp;</span><b class="caret"></b></a><ul class="dropdown-menu"><li><li><a href="/snippets/web102/syllabus" target="_blank">Syllabus</a></li></li><li><li><a href="/snippets/web102/prework" target="_blank">Prework</a></li></li><li><li><a href="/courses/web102/pages/grading" target="_blank">Grading Rubrics</a></li></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>&nbsp;<span class="hidden-sm">Quick Actions</span>&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="https://apply.codepath.com/organizations/codepathorg/cohorts/571/group-formation/ideas/" target="_blank"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;Add a Project Idea</a></li><li><a href="https://apply.codepath.com/members/edit-profile/" target="_blank"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;&nbsp;Update Profile Information</a></li><li><a href="https://apply.codepath.com/organizations/codepathorg/cohorts/571/participant/withdraw/" target="_blank"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&nbsp;&nbsp;Withdraw from Course</a></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" style="overflow:hidden"><div class="pull-left"><img src="https://avatars.githubusercontent.com/u/156105005?v=4" width="20" class="img-circle img-responsive" alt="156105005?v=4" /></div>&nbsp;<div class="pull-right visible-lg">Cesar Cabrera Garcia <b class="caret"></b></div></a><ul class="dropdown-menu"><li><a href="https://apply.codepath.com/members/edit-profile/" target="_blank">Update Profile</a></li><li><a href="/" data-method="delete">Logout</a></li></ul></li></ul></div></div></div><div class="container"><div class="title clearfix"><div class="pull-left"><div class="square-logo"></div></div><div class="course-label"><h1>WEB102 | Intermediate Web Development</h1><h2>For-Credit-Intermediate-Web-Development-Spring-2024 (@ Florida Atlantic University)</h2><h2>Personal Member ID#: <strong>96406</strong></h2></div><p class="alert alert-info hidden-print">Need help?&nbsp;Post on our <a href="http://codepath.slack.com/" target="blank" class="alert-link">Class Slack Channel</a>&nbsp;or email us at <a href="mailto:support@codepath.org" class="alert-link">support@codepath.org</a></p></div><div class="row"><div class="col-md-2 sidebar hidden-print"><ul class="nav nav-pills nav-stacked"><li class=""><a href="/courses/web102/pages/overview">Overview</a></li><li class=""><a href="/snippets/web102/prework" target="_blank">Prework</a></li><li class=""><a href="/courses/web102/pages/getting_started">Getting Started</a></li><li class=""><a href="/courses/web102/pages/schedule">Schedule</a></li><li class=""><a href="/courses/web102/pages/submitting_coursework">Submitting Coursework</a></li><li class=""><a href="/courses/web102/pages/grading">Grading Rubrics</a></li><li class=""><a href="/courses/web102/pages/ai_usage">AI Usage</a></li><li><a href="/courses/web102/report"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>&nbsp;<span>My Report</span></a></li><li><a href="/courses/web102/unit/1#!overview"><span>Unit 1 &nbsp;<span class="glyphicon glyphicon-ok" /></span></a></li><li><a href="/courses/web102/unit/2#!overview"><span>Unit 2 &nbsp;<span class="glyphicon glyphicon-ok" /></span></a></li><li class="active"><a href="/courses/web102/unit/3#!overview"><span>Unit 3 &nbsp;<span class="glyphicon glyphicon-ok" /></span></a></li><li><a href="/courses/web102/unit/4#!overview"><span>Unit 4 &nbsp;<span class="glyphicon glyphicon-map-marker" /></span></a></li><li><a href="/courses/web102/unit/5#!overview"><span>Unit 5 &nbsp;</span></a></li><li><a href="/courses/web102/unit/6#!overview"><span>Unit 6 &nbsp;</span></a></li><li><a href="/courses/web102/unit/7#!overview"><span>Unit 7 &nbsp;</span></a></li><li><a href="/courses/web102/unit/8#!overview"><span>Unit 8 &nbsp;</span></a></li><li><a href="/courses/web102/unit/9#!overview"><span>Unit 9 &nbsp;</span></a></li><li><a href="/courses/web102/unit/10#!overview"><span>Unit 10 &nbsp;</span></a></li><li class=""><a href="/courses/web102/pages/groupings">Groupings</a></li><li><details><summary>Career Resources</summary><ul class="nav nav-pills nav-stacked"><li class=""><a href="/courses/web102/pages/career/career_center_overview">Career Center</a></li>
+<li class=""><a href="/courses/web102/pages/career/semester_events">Events</a></li></ul></details></li>
+<li class=""><a href="/courses/web102/pages/grading_prework">Prework Grading Guide</a></li>&nbsp;</ul></div><div class="col-md-10"><ul class="nav nav-tabs hidden-print"><li><a href="#surveys" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;Survey</a></li><li><a href="#overview" data-toggle="tab"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Overview</a></li><li><a href="#labs" data-toggle="tab">Lab</a></li><li><a href="#projects" data-toggle="tab">Projects</a></li><li><a href="#resources" data-toggle="tab"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp;Resources</a></li><li><a href="#career" data-toggle="tab"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>&nbsp;Career</a></li><li><a href="#report" data-toggle="tab"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>&nbsp;Report</a></li></ul><div class="tab-content section-content" style="height: 1000px;"><div class="tab-pane" id="surveys"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><div class="surveymonkey" data-survey-id="tRaiETqnLgj758hTBazgd4mFCCRqAQo_2FtNRVDVMl4mYD_2BdRpGhgigY4_2FJpWBylvD"></div>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">18 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">150%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Feb 11 at 1:58pm EST</span><strong>First Submitted At</strong></li></ul><p><span class="glyphicon glyphicon-star"></span>&nbsp;<strong>Congrats!</strong>&nbsp;Your submission is within the top 20% for your class group.</p><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>2</td><td>13</td><td>22</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" width="250" alt="Hdynuxy " /></div></div></div></div></div><div class="tab-pane" id="overview"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><div class="alert alert-warning inset-text">
+📬 Submit your <a href="#!projects">Project 3</a> by <strong><span data-time="2024-02-18T23:59:00-05:00" data-format="longdatetime">Sunday, February 18th at 11:59pm EST</span></strong> using the <strong>Submit</strong> button on the <strong><a href="#!projects">Project tab</a></strong>
+</div>
+<h2><a class="anchor" id="heading-unit-3-responding-to-complex-user-input" href="#heading-unit-3-responding-to-complex-user-input"><span class="glyphicon glyphicon-link"></span></a>Unit 3 - Responding to Complex User Input</h2>
+<p>Welcome to Unit 3!</p>
+<p>This unit is all about building the complexity of user inputs we're able to respond to. We'll start by recapping the purpose of forms in websites, then React-ify our approach to building them. Complex input often necessitates more complex state, so we'll also discuss some of the intricacies of using arrays and objects as state. More complex state opens up a lot of options for storing, manipulating, and displaying data, whether it's from the user or another source. The last key topic for this unit is "lifting up state," which is a technique used to centralize the way state is stored. The technique involves creating a parent component that acts as the single source of truth for information when multiple child components may need to access that information.</p>
+<p>In this unit's <a href="#!labs">lab</a>, you'll build out an essential companion for any barista-to-be: On My Grind, a gamified study aid that tests your fancy coffee beverage knowledge. By the way, what's an eggnog refresher?</p>
+<p>This unit's <a href="#!projects">individual project</a> expands on your work from our last unit. You'll expand your Flashcards! app with a Quiz Mode that allows the user to test their knowledge before seeing the correct answer, giving them in-the-moment feedback on their correctness. You'll also expand Study Mode to allow for progressing back and forth through the list as well as shuffling the deck, instead of just picking a random card each time.</p>
+<hr />
+<hr />
+<h3><a class="anchor" id="heading-weekly-checklist" href="#heading-weekly-checklist"><span class="glyphicon glyphicon-link"></span></a>Weekly Checklist</h3>
+<h4><a class="anchor" id="heading-in-class" href="#heading-in-class"><span class="glyphicon glyphicon-link"></span></a>In Class:</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Attend the 📕 <strong>In-Class Session</strong> <a href="https://docs.google.com/presentation/d/1CzZrT4S84-8Rs_UYc0plQU8yv4mhgxVXUv2grmXA4Ck/edit?usp=drivesdk" target="_blank"><em>(🔗 Unit 3 slides)</em></a>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Complete the 🎯 <a href="#!labs"><strong>Lab Session</strong></a>
+</div>
+</li>
+</ul>
+<h4><a class="anchor" id="heading-after-class" href="#heading-after-class"><span class="glyphicon glyphicon-link"></span></a>After Class:</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Complete and <strong>📬 submit</strong> this unit's 🧩 <a href="#!projects"><strong>Project</strong></a>
+<ul>
+<li>Reminder: Due by <strong><span data-time="2024-02-18T23:59:00-05:00" data-format="longdatetime">Sunday, February 18th at 11:59pm EST</span></strong>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">18 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">150%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Feb 11 at 1:58pm EST</span><strong>First Submitted At</strong></li></ul><p><span class="glyphicon glyphicon-star"></span>&nbsp;<strong>Congrats!</strong>&nbsp;Your submission is within the top 20% for your class group.</p><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>2</td><td>13</td><td>22</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" width="250" alt="Hdynuxy " /></div></div></div></div></div><div class="tab-pane" id="labs"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><h2><a class="anchor" id="heading-unit-3-lab-on-my-grind" href="#heading-unit-3-lab-on-my-grind"><span class="glyphicon glyphicon-link"></span></a>Unit 3 Lab: ☕ On My Grind</h2>
+<h3><a class="anchor" id="heading-overview" href="#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h3>
+<p>Have you ever wanted to work at Starbucks? You're about to be one step closer. In this app inspired by Wordle, memorize coffee drink recipes and quiz yourself on a random real (and possibly discontinued 😉) Starbucks drink's temperature, flavor, milk type, and blendedness. The app will let you know if you're a natural at barista-ing.</p>
+<p><em>View an exemplar of what you'll be creating in this lab <a href="https://quiet-macaron-ca013a.netlify.app/" target="_blank">here</a>!</em></p>
+<h4><a class="anchor" id="heading-required-features" href="#heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h4>
+<p>Quiz, quiz, quiz! In the required features for this project, you will have a form with multiple choice inputs that can be selected and their values will populate the answer box above them. Then when submitted, the answer boxes will turn red if the answers placed there are incorrect and purple if the answers are correct. Can you handle the Starbucks drink station at an 8 am rush?</p>
+<p><a href="/course_images/web102/lab3/required_none.png" target="_blank"><img src="/course_images/web102/lab3/required_none.png" title="Screenshot of app with base features implemented" width="600" alt="Screenshot of app with base features implemented" class="center-block" /></a>
+<a href="/course_images/web102/lab3/required_example.png" target="_blank"><img src="/course_images/web102/lab3/required_example.png" title="Screenshot of app with base features implemented" width="600" alt="Screenshot of app with base features implemented" class="center-block" /></a></p>
+<h4><a class="anchor" id="heading-stretch-features" href="#heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h4>
+<p>In the stretch goals, we are making it a little harder by having users have to guess our four ingredients for each drink and type in their answer. Of course this means that they cannot just type in anything, their guesses still have to be in line with what options we have given for the 4 categories. How can we enforce that?</p>
+<p><a href="/course_images/web102/lab3/checkpoint6.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint6.png" title="Screenshot of app with stretch features implemented" width="600" alt="Screenshot of app with stretch features implemented" class="center-block" /></a></p>
+<h3><a class="anchor" id="heading-goals" href="#heading-goals"><span class="glyphicon glyphicon-link"></span></a>🎯 Goals</h3>
+<p>By the end of this lab you will be able to...</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create React forms from scratch and dynamically populating their answer choices</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create a new custom component within a parent component and passing in props and ways to edit state variables</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Creating and using React forms</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Creating and setting state variables of all kinds</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Using state variables to edit information on a page</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Importing data files into an app</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Using user input to change a visual aspect of the app</div>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-features" href="#heading-features"><span class="glyphicon glyphicon-link"></span></a>Features</h3>
+<h4><a class="anchor" id="1-heading-required-features" href="#1-heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ One drink at a time is displayed</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ The user can click one option for each of the four categories to input their answer</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ The selected option populates into the box above, and if an option is already in the box, it is replaced by the new option</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Clicking “check answer” submits the answer to be checked for correctness</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ After clicking “check answer”, the user can see which components of a drink they entered correctly and incorrectly by having the box for that answer change visually</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Clicking on the new drink button shows a new drink and clears the input boxes</div>
+</li>
+</ul>
+<h4><a class="anchor" id="1-heading-stretch-features" href="#1-heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h4>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ The user can type in their response in each box instead of having to click on the option, and typed inputs are properly validated</div>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-resources" href="#heading-resources"><span class="glyphicon glyphicon-link"></span></a>Resources</h3>
+<ul>
+<li><a href="https://reactjs.org/docs/forms.html" target="_blank">React Forms</a></li>
+<li><a href="https://reactjs.org/docs/handling-events.html" target="_blank">Handling Events</a></li>
+<li><a href="https://www.pluralsight.com/guides/load-and-render-json-data-into-react-components#module-loadjsondataintostockscomponent" target="_blank">Importing JSON Files</a></li>
+</ul>
+<h2><a class="anchor" id="heading-lab-instructions" href="#heading-lab-instructions"><span class="glyphicon glyphicon-link"></span></a>Lab Instructions</h2>
+<h3><a class="anchor" id="2-heading-required-features" href="#2-heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h3>
+<h4><a class="anchor" id="heading-step-0-set-up" href="#heading-step-0-set-up"><span class="glyphicon glyphicon-link"></span></a>Step 0: Set up</h4>
+<p>In this step, we'll create a new React project, install required dependencies, and remove the extra code we won't need for this lab.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create a new React project by running the command <code>npm create vite@latest barista-app</code></p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Follow the prompts and instructions the Terminal gives you. This project will be with the React framework in JavaScript.</p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Then in your terminal, run the following commands:</p>
+<div class="highlighter-rouge language-console"><div class="highlight"><pre class="codehilite"><code><span class="go">cd barista-app
+npm install
+npm run dev
+</span></code></pre></div></div>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text">
+<strong>💡 Tip:</strong> Running <code>npm run dev</code> will start up a server that stays active and constantly updates your project as you type. If you want to quit this behavior, press <code>ctrl + c</code> or delete the Terminal window in VS Code.
+</div>
+<p>You should see this on your screen:</p>
+<p><a href="/course_images/web102/lab3/start_setup1.png" target="_blank"><img src="/course_images/web102/lab3/start_setup1.png" title="Screenshot of start page" width="800" alt="Screenshot of start page" class="center-block" /></a></p>
+<p>In the <code>App.jsx</code> file in your newly created project:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Remove everything inside the <code>return()</code> statement. When you check your local running version of the app, there should be nothing there.</p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Delete the following line from the top of the file.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">reactLogo</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./assets/react.svg</span><span class="dl">'</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<hr />
+<h4><a class="anchor" id="heading-step-1-create-our-react-form-structure" href="#heading-step-1-create-our-react-form-structure"><span class="glyphicon glyphicon-link"></span></a>Step 1: Create our React form structure</h4>
+<p>In this step, we will be creating our React form, which will allow users to input their guesses for the drink ingredients. We want to dynamically create this form.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In the <code>src</code> folder, create a new folder called <code>Components</code>, which will hold all of our custom components so that we can use them in our app.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In this <code>Components</code> folder, create a new file called <code>BaristaForm.jsx</code>.</div>
+</li>
+</ul>
+<p>Since all of our form details will be in this <code>BaristaForm</code> component, we need to import it into our <code>App.jsx</code> file.</p>
+<p>In <code>App.jsx</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>At the top of the file, import the <code>BaristaForm</code> component from the <code>Components</code> directory.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">BaristaForm</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Components/baristaForm</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>Then, inside the <code>return</code> statement, create the following:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ A <code>div</code> with the class name <code>"title-container"</code>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Inside this <code>div</code>, create an <code>h1</code> with the class name <code>"title"</code> and text <code>"On My Grind"</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ After the <code>h1</code>, create a <code>p</code> element with the text <code>"So you think you can barista? Let's put that to the test..."</code>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ After the <code>div</code>, add a <code>BaristaForm</code> component.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Need some help creating these elements? Tell Copilot what you are trying to do to have it help you fill in the <code>return</code> statement. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>In the return statement, I need to write code that does the following:</p>
+<ol>
+<li>A div with the class name "title-container"</li>
+<li>Inside this div, create an h1 with the class name "title" and text "On My Grind"</li>
+<li>After the h1, create a p element with the text "So you think you can barista? Let's put that to the test..."</li>
+<li>After the div, add a BaristaForm component</li>
+</ol>
+<p>Help me update my code with these elements.</p>
+</blockquote>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"title-container"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">className</span><span class="p">=</span><span class="s">"title"</span><span class="p">&gt;</span>On My Grind<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>So you think you can barista? Let's put that to the test...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nc">BaristaForm</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>Now, we need to actually create the <code>BaristaForm</code> component.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>In the <code>BaristaForm.jsx</code> file, add this starter code:</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">,</span> <span class="nx">useState</span><span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">BaristaForm</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+  
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">BaristaForm</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>Now that we have the bare bones set up, within our <code>div</code> tags in the <code>return</code> statement, we will add the basic parts of our form -- the <code>form</code> tags, the <code>New Drinks</code> button, and the <code>Check Answer</code> button. We need to use the <code>onClick</code> event handler in both buttons so that they will respond properly when we click them, but we will add this functionality later.</p>
+<p>Inside the <code>div</code> tags in the <code>return statement</code>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Add opening and closing <code>form</code> tags.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ After the closing <code>form</code> tag, create a <code>button</code>:
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set the type to <code>"submit"</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Give it the class names <code>"button"</code> and <code>"submit"</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ It should call the <code>onCheckAnswer()</code> function when it is clicked.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ The button text should be <code>"Check Answer"</code>.</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ After the <code>Check Answer</code> button, create another <code>button</code>:
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set the type to <code>"new-drink-button"</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Give it the class names <code>"button"</code> and <code>"submit"</code>.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ It should call the <code>onNewDrink()</code> function when it is clicked.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ The button text should be <code>"New Drink"</code>.</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Pair Programmer</strong></summary><div class="well inset-text">
+<p>Try using Copilot as a pair programmer to help you with this if you get stuck. You could try having it act as the driver or the navigator and interact with it similar to how you would when your driver or navigator is your peer sitting next to you. For example, let's say we want Copilot to act as the driver:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>You are an experienced software engineer. You and I will be pair programming on a project. I will be the navigator, and you will be the driver. As a navigator, when I explain the logic to you, I want you (as the driver) to implement it in JSX.</p>
+</blockquote>
+<p>It will then respond to confirm its role and let you know it's willing to help. Then you can give it the task you want it to complete. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>I need to create a button element that has a type "submit", class names "button" and "submit", calls the onCheckAnswer function when it is clicked, and sets the button text to "Check Answer". Write the code to create this button element.</p>
+</blockquote>
+<p>Make sure to review the code it gives you. Does it make sense? Put in your project and test it. Does it work? Do you need to change anything to match the requirements?</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">form</span> <span class="p">&gt;</span>
+    
+    // we will fill this in soon!
+    
+  <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="p">=</span><span class="s">"submit"</span> <span class="na">className</span><span class="p">=</span><span class="s">"button submit"</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="nx">onCheckAnswer</span><span class="si">}</span><span class="p">&gt;</span>
+    Check Answer
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">button</span>
+    <span class="na">type</span><span class="p">=</span><span class="s">"new-drink-button"</span>
+    <span class="na">className</span><span class="p">=</span><span class="s">"button newdrink"</span>
+    <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="nx">onNewDrink</span><span class="si">}</span>
+  <span class="p">&gt;</span>
+    New Drink
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>And since we mentioned out <code>onNewDrink()</code> and <code>onCheckAnswer()</code> functions for our button event handlers, let's make some empty functions using arrow notation so that at least the function names exist in our component, even if we don't have any code in them currently. Try it on your own!</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Use arrow notation to write an empty <code>onNewDrink()</code> function.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Use arrow notation to write an empty <code>onCheckAnswer()</code> function.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>If you're not sure how to create these empty functions using arrow notation, ask Copilot for an example. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>Can you show me how to write a function using arrow notation in JavaScript?</p>
+</blockquote>
+<p>Use this example to set up your empty <code>onNewDrink()</code> and <code>onCheckAnswer()</code> functions.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="nx">onNewDrink</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">onCheckAnswer</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  
+<span class="p">};</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>Lastly, let's add the title to our form.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Inside of the <code>return</code> statement and inside of our containing <code>div</code> tags, but before our <code>form</code> tags, let's add an <code>h2</code> title:</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Hi, I'd like to order a:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>And now we have the basic structure of our form!</p>
+<p>📍 <strong>Checkpoint 1</strong>:</p>
+<p>At the end of this step, you should be able to see your page title and two buttons to check the answer and reset to a new drink, but not the actual inputs for our form yet. This will be done in the next step.</p>
+<p><a href="/course_images/web102/lab3/checkpoint1.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint1.png" title="Screenshot of checkpoint 1 features on page" width="600" alt="Screenshot of checkpoint 1 features on page" class="center-block" /></a></p>
+<br />
+<hr />
+<h4><a class="anchor" id="heading-step-2-dynamically-create-our-form-inputs-with-our-different-ingredient-choices-and-place-the-user-inputs-into-state-variables" href="#heading-step-2-dynamically-create-our-form-inputs-with-our-different-ingredient-choices-and-place-the-user-inputs-into-state-variables"><span class="glyphicon glyphicon-link"></span></a>Step 2: Dynamically create our form inputs with our different ingredient choices and place the user inputs into state variables</h4>
+<p>In this step, we will be creating the radio buttons that our users will be able to choose from in order to submit guesses for our drink ingredients. We will also need some state variables to keep track of the user choices so that we can compare them against the correct answers.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>First, right under the <code>const BaristaForm = () =&gt; {</code> that we use to create this component, create a state variable using <code>useState()</code> to handle all of the controlled inputs for our four basic ingredient categories -- <code>temperature</code>, <code>milk</code>, <code>syrup</code>, and <code>blended</code>.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="p">[</span><span class="nx">inputs</span><span class="p">,</span> <span class="nx">setInputs</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">({</span>
+  <span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">milk</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">syrup</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">blended</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span>
+<span class="p">});</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>Now that we can store what choices the user makes, we need to show them the list of options.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create a variable called <code>ingredients</code> underneath the new state variables.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="nx">ingredients</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span> <span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">hot</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">lukewarm</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">cold</span><span class="dl">'</span><span class="p">],</span>
+  <span class="dl">'</span><span class="s1">syrup</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">mocha</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">vanilla</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">toffee</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">maple</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">caramel</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">other</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span><span class="p">],</span>
+  <span class="dl">'</span><span class="s1">milk</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">cow</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">oat</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">goat</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">almond</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span><span class="p">],</span>
+  <span class="dl">'</span><span class="s1">blended</span><span class="dl">'</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">yes</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">turbo</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">no</span><span class="dl">'</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text">
+<strong>Note:</strong> There are some values in the lists above that do not appear in our real drinks list JSON and serve as fakeouts for users. You can add or change out the fakeout choices if you would like, but be sure to review the list of real drinks first to make sure that you are not taking out an answer choice that will actually be used in one of the drinks.
+</div>
+<p>Next, we are going to create a new component to take in our <code>ingredients</code> and set up different blocks of answer choices for each list in <code>ingredients</code>.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>In the <code>Components</code> folder, create a new file called <code>RecipeChoices.jsx</code>.</p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Add this starter code for the <code>RecipeChoices</code> component:</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">RecipeChoices</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">RecipeChoices</span><span class="p">;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>We know that this component will be used to make different inputs via radio buttons, so we need to pass in the different answer choices to the radio buttons as props. We also need to save the user's selection from this nested component (the radio buttons) back in our parent component <code>BaristaForm</code> (as state). Because we are passing in a list of choices to be displayed as radio buttons, we can use <code>.map()</code> to match each choice with a radio button.</p>
+<p>The <code>RecipeChoices</code> component uses the following four props:</p>
+<ul class="contains-task-list">
+<li>
+<p>How we will handle change when different inputs are selected so that the selections get saved within the <code>BaristaForm</code> component's state</p>
+</li>
+<li>
+<p>A label describing the corresponding ingredient (e.g., <code>"milk"</code>)</p>
+</li>
+<li>
+<p>A list of answer choices</p>
+</li>
+<li>
+<p>A checked variable that deselects the user's choice when they request a new drink</p>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Add props between the <code>()</code> in the <code>const RecipeChoices</code> line.</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="nx">RecipeChoices</span><span class="p">({</span> <span class="nx">handleChange</span><span class="p">,</span> <span class="nx">label</span><span class="p">,</span> <span class="nx">choices</span><span class="p">,</span> <span class="nx">checked</span> <span class="p">})</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Inside the <code>div</code> tags in the <code>return</code> statement, loop through each of the <code>choices</code> (if the list is populated), and then create a list item that represents one radio button input.</p>
+<div class="highlighter-rouge language-html"><div class="highlight"><pre class="codehilite"><code><span class="nt">&lt;div</span> <span class="na">className=</span><span class="s">"radio-buttons"</span><span class="nt">&gt;</span>
+  {choices <span class="err">&amp;&amp;</span>
+    choices.map((choice) =&gt; (
+      <span class="nt">&lt;li</span> <span class="na">key=</span><span class="s">{choice}</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span>
+          <span class="na">id=</span><span class="s">{choice}</span>
+          <span class="na">value=</span><span class="s">{choice}</span>
+          <span class="na">name=</span><span class="s">{label}</span>
+          <span class="na">type=</span><span class="s">"radio"</span>
+          <span class="na">onChange=</span><span class="s">{handleChange}</span>
+          <span class="na">checked=</span><span class="s">{checked</span> <span class="err">==</span> <span class="na">choice</span><span class="err">}</span>
+        <span class="nt">/&gt;</span>
+          {choice}
+      <span class="nt">&lt;/li&gt;</span>
+    ))}
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>💡 Need more explanation on the input categories?</strong></summary><div class="well inset-text">
+<ul>
+<li>
+<code>id</code> and <code>value</code> keep track of what our form is recognizing as our choice.</li>
+<li>
+<code>name</code> groups input buttons together so that the app recognizes they are all answers to the same question. The <code>name</code> attribute is what enforces radio buttons as mutually exclusive, so that when one is selected, any others with the same <code>name</code> will be deselected.</li>
+<li>
+<code>onChange</code> will let the form know what to do when the user selects a choice.</li>
+<li>
+<code>checked</code> keeps track of whether the radio button will be selected or deselected.</li>
+</ul>
+<p>Everything in the <code>{ }</code> is what we will pass in from our parent component, <code>BaristaForm</code>.</p></div></details></div>
+<p>Back in <code>BaristaForm.jsx</code>, we will use our <code>RecipeChoices</code> component to add actual questions and answers to our form.</p>
+<p>For each of our four ingredients, <code>temperature</code>, <code>milk</code>, <code>syrup</code>, and <code>blended</code>, we will create a small title for that ingredient using <code>h3</code> tags, add an answer space <code>div</code> with a reference to the state variable of that ingredient so that the user selection is displayed above the form choices, and then a <code>RecipeChoices</code> component with real values for all of the props that we pass into that component.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Add the following code for the <code>temperature</code> ingredient.</p>
+<!-- 
+in the below code, {inputs["temperature"]} was changed from just {temperature} 
+changed it based on line 102 in exemplar code -->
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Temperature<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"answer-space"</span> <span class="p">&gt;</span>
+  <span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nc">RecipeChoices</span>
+  <span class="na">handleChange</span><span class="p">=</span><span class="si">{</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">setInputs</span><span class="p">((</span><span class="nx">prevState</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+    <span class="p">...</span><span class="nx">prevState</span><span class="p">,</span>
+    <span class="p">[</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">name</span><span class="p">]:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+  <span class="p">}))</span><span class="si">}</span>
+  <span class="na">label</span><span class="p">=</span><span class="s">"temperature"</span>
+  <span class="na">choices</span><span class="p">=</span><span class="si">{</span><span class="nx">ingredients</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+  <span class="na">checked</span><span class="p">=</span><span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+<span class="p">/&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Do this same thing for the rest of the four ingredients.</p>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>AI tools like Copilot and ChatGPT work really well when they are given an example to base its answer on. If you get stuck doing the same for the rest of the ingredients, try asking Copilot for help:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>I wrote code to create a RecipeChoice component for the temperature ingredient. I need to do the same for the milk ingredient. Help me add the milk ingredient using the same structure as the temperature ingredient.</p>
+</blockquote>
+<p>Make sure you have the <code>RecipeChoice.jsx</code> and <code>BaristaForm.jsx</code> files open when you ask Copilot for help. Copilot attempts to use the files you have open for context when answering questions, so you should have both of these open so it can provide more accurate responses.</p>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 2</strong>:</p>
+<p>Once you have this, you should now have a form with each section and a list of answer choices to pick from in the form of radio buttons. When you select each radio button, its value will also appear above the answer choices, changing as you select different buttons.</p>
+<p>The choices you have listed for each ingredient directly correspond to the <code>ingredients</code> dictionary you made above. By changing the dictionary, you can change what answer choices are listed.</p>
+<p><a href="/course_images/web102/lab3/checkpoint2.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint2.png" title="Screenshot of checkpoint 2 features on page" width="600" alt="Screenshot of checkpoint 2 features on page" class="center-block" /></a></p>
+<p><a href="/course_images/web102/lab3/checkpoint2_select.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint2_select.png" title="Screenshot of checkpoint 2 features on page" width="600" alt="Screenshot of checkpoint 2 features on page" class="center-block" /></a></p>
+<br />
+<hr />
+<h4><a class="anchor" id="heading-step-3-importing-our-json-drinks-list-to-the-form-and-adding-the-ability-to-grab-new-drinks-from-the-list-with-the-new-drink-button" href="#heading-step-3-importing-our-json-drinks-list-to-the-form-and-adding-the-ability-to-grab-new-drinks-from-the-list-with-the-new-drink-button"><span class="glyphicon glyphicon-link"></span></a>Step 3: Importing our JSON drinks list to the form and adding the ability to grab new drinks from the list with the 'New Drink' button</h4>
+<p>In this step, we will be adding the list of drinks that users will be trying to guess the ingredients to. We have provided a <code>drinks.json</code>, with the real Starbucks drinks options that you will need to use in this lab. You can download the file from this <a href="https://github.com/codepath/web102_unit3lab" target="_blank">Unit 3 GitHub Repo</a>.</p>
+<p>First, we need to import our file with our different drinks and their ingredients.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>At the top of <code>BaristaForm.jsx</code>, import the <code>drinks.json</code> file.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="k">import</span> <span class="nx">drinksJson</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./drinks.json</span><span class="dl">"</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Create state variables to keep track of what drink we have currently and what the true recipe is behind that drink. How can we create them using <code>useState()</code>?</p>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>If you're stuck, try asking Copilot how we should do this. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>I need to create state variables to keep track of the current drink and what the true recipe is behind that drink. Can you show me how I should create these?</p>
+</blockquote>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>💡 Hint:</strong> Look at the data types that the <code>drink.json</code> file uses for the <code>name</code> key and the <code>ingredients</code> key.</summary><div class="well inset-text">
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="p">[</span><span class="nx">currentDrink</span><span class="p">,</span> <span class="nx">setCurrentDrink</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="p">[</span><span class="nx">trueRecipe</span><span class="p">,</span> <span class="nx">setTrueRecipe</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">({});</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>Now we are going to add some logic to the <code>onNewDrink()</code> function that we created earlier. When we request a new drink, we want to clear out the current values of our state variables since they apply only to the previous drink and that will deselect whatever radio buttons the user has chosen. Then, we want to get another randomly chosen drink from our <code>drinksJson</code> file.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>First, create a new function to select another random drink called <code>getNextDrink()</code>.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="nx">getNextDrink</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    
+<span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Within this function, we'll use <code>Math</code> to get a random number from 0 to the numerical length of the <code>drinks</code> list in our <code>drinksJson</code>.</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="kd">let</span> <span class="nx">randomDrinkIndex</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">drinksJson</span><span class="p">.</span><span class="nx">drinks</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Set the <code>currentDrink</code> state variable to the name at the random index of the <code>drinks</code> list in our <code>drinksJson</code>.</p>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Set the <code>trueRecipe</code> state variable to the <code>ingredients</code> associated with that drink at the random index of the <code>drinks</code> list in our <code>drinksJson</code>.</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="nx">setCurrentDrink</span><span class="p">(</span><span class="nx">drinksJson</span><span class="p">.</span><span class="nx">drinks</span><span class="p">[</span><span class="nx">randomDrinkIndex</span><span class="p">].</span><span class="nx">name</span><span class="p">);</span>
+<span class="nx">setTrueRecipe</span><span class="p">(</span><span class="nx">drinksJson</span><span class="p">.</span><span class="nx">drinks</span><span class="p">[</span><span class="nx">randomDrinkIndex</span><span class="p">].</span><span class="nx">ingredients</span><span class="p">);</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Back in our <code>onNewDrink()</code> function, we want to set our state variable for our ingredients to be empty, and then call <code>getNextDrink()</code></p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="nx">setInputs</span><span class="p">({</span>
+  <span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">milk</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">syrup</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">blended</span><span class="dl">'</span><span class="p">:</span> <span class="dl">''</span> <span class="p">});</span>
+  
+<span class="nx">getNextDrink</span><span class="p">();</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<p>The last thing we want to do now is render our <code>currentDrink</code> onto our page so that users can actually see it.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create a small <code>div</code> right under the <code>"Hi, I'd like to order a:"</code> title to do this with the class name <code>"drink-container"</code>. Inside this <code>div</code>, add the following elements:
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ An <code>h2</code> with the class name <code>"mini-header"</code> with the <code>currentDrink</code> state variable as its text.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ A button with the type <code>"new-drink-button"</code> and class names <code>"button"</code> and <code>"newdrink"</code> that calls the <code>onNewDrink()</code> function when the button is clicked. Set the text for the button to <code>"🔄"</code>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Pair Programmer</strong></summary><div class="well inset-text">
+<p>Try using ChatGPT as a pair programmer to help you with this if you get stuck. Make sure to review the code it gives you. Does it make sense? Put it in your project and test it. Does it work? Do you need to change anything to match the requirements?</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-html"><div class="highlight"><pre class="codehilite"><code><span class="nt">&lt;div</span> <span class="na">className=</span><span class="s">"drink-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">className=</span><span class="s">"mini-header"</span><span class="nt">&gt;</span>{currentDrink}<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;button</span>
+    <span class="na">type=</span><span class="s">"new-drink-button"</span>
+    <span class="na">className=</span><span class="s">"button newdrink"</span>
+    <span class="na">onClick=</span><span class="s">{onNewDrink}</span>
+  <span class="nt">&gt;</span>
+    🔄
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 3</strong>:</p>
+<p>After this step, if you press <code>New Drink</code>, you should now be able to see a new drink from the drinks json pop up for users to guess what the ingredients are for it.</p>
+<p><strong>Note:</strong> Since there is no logic in this app so far to make a drink pop up by default, you will always have to click <code>New Drink</code> to have a drink be displayed and start the quiz. Feel free to explore ways to have a drink by default if you would like!</p>
+<p><a href="/course_images/web102/lab3/checkpoint3.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint3.png" title="Screenshot of checkpoint 3 features on " width="600" alt="Screenshot of checkpoint 3 features on " class="center-block" /></a></p>
+<hr />
+<h4><a class="anchor" id="heading-step-4-adding-functionality-to-check-user-inputs-against-the-true-result-on-form-submission" href="#heading-step-4-adding-functionality-to-check-user-inputs-against-the-true-result-on-form-submission"><span class="glyphicon glyphicon-link"></span></a>Step 4: Adding functionality to check user inputs against the true result on form submission</h4>
+<p>In this step, we will be adding functionality that checks the user choices in our form and compares them with the real recipe when we click the <code>Check Answer</code> button. We will also create a way for an ID to be placed on the answer-space when a user has the wrong answer for an ingredient.</p>
+<p>First, we need some more state variables to represent whether we have a correct ingredient, and we can do this with just simple strings. To make this clearer, we can make a different state variable for the correctness of each ingredient.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create state variables to keep track of whether we have the correct temperature, correct syrup, correct milk, and correct blended.</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Don't forget, you can use Copilot to help you if you forget how to create a state variable. Try asking for an example and use that to help you create these.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="kd">const</span> <span class="p">[</span><span class="nx">correct_temp</span><span class="p">,</span> <span class="nx">setCheckedTemperature</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">[</span><span class="nx">correct_syrup</span><span class="p">,</span> <span class="nx">setCheckedSyrup</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">[</span><span class="nx">correct_milk</span><span class="p">,</span> <span class="nx">setCheckedMilk</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">[</span><span class="nx">correct_blended</span><span class="p">,</span> <span class="nx">setCheckedBlended</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>We also need to reset these state variables when we order a new drink so that a user's errors on one drink do not carry over to others.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ In your <code>onNewDrink()</code> function, set each state variable to empty strings.</div>
+</li>
+</ul>
+<div class="alert alert-warning inset-text"><details><summary><strong>Want to double-check your code? Compare what you have to this ⤵️</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="nx">setCheckedTemperature</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="nx">setCheckedSyrup</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="nx">setCheckedMilk</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="nx">setCheckedBlended</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>With this, we need to create some logic in our <code>onCheckAnswer()</code> function to go through each state variable we have and check it against the <code>trueRecipe</code> that we got from our <code>drinksJson</code>.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Add this code to do this for <code>temperature</code>:</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="k">if</span> <span class="p">(</span><span class="nx">trueRecipe</span><span class="p">.</span><span class="nx">temp</span> <span class="o">!=</span> <span class="nx">inputs</span><span class="p">[</span><span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span><span class="p">]){</span>
+  <span class="nx">setCheckedTemperature</span><span class="p">(</span><span class="dl">'</span><span class="s1">wrong</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="nx">setCheckedTemperature</span><span class="p">(</span><span class="dl">"</span><span class="s2">correct</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Finish this pattern for the other three ingredients.</p>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Since you have an example, you can use this with Copilot to help you follow the same structure for the other ingredients. For example:</p>
+<p><em><strong>You:</strong></em></p>
+<blockquote>
+<p>I have written code to set correct_temp for the temperature ingredient. I need to do the same for the milk ingredient. Help me add the milk ingredient using the same structure as the temperature ingredient.</p>
+</blockquote>
+<p></p></div></details></div>
+<p>And the last step, is we need to make it possible to visually change our answer spaces when we check the answers by adding our <code>correct_*</code> state variables as IDs in the <code>answer-space</code> divs. This will allow us to make different CSS selectors for the <code>#correct</code> and <code>#wrong</code> IDs to trigger a visual change.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>To do this, add the following code to each <code>&lt;div className="answer-space" &gt;</code> for each ingredient. Here is an example for this with the state variable for the <code>temperature</code>.</p>
+<div class="highlighter-rouge language-javascript"><div class="highlight"><pre class="codehilite"><code><span class="nx">id</span><span class="o">=</span><span class="p">{</span><span class="nx">correct_temp</span><span class="p">}</span>
+</code></pre></div></div>
+</div>
+</li>
+</ul>
+<div class="alert alert-warning inset-text"><details><summary><strong>💡 Here's what it should look like for the <code>temperature</code> category!</strong></summary><div class="well inset-text">
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Temperature<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"answer-space"</span> <span class="na">id</span><span class="p">=</span><span class="si">{</span><span class="nx">correct_temp</span><span class="si">}</span><span class="p">&gt;</span>
+
+  <span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span><span class="p">]</span><span class="si">}</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></div>
+<p>Do something similar for the rest of the ingredients, of course replacing <code>correct_temp</code> with <code>correct_milk</code>, <code>correct_syrup</code>, and <code>correct_blended</code> where relevant.</p>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 4</strong>:</p>
+<p>After this step, you should now have functionality to check the correct answers for each ingredient, and added variable class names that we can then use to affect the color of that answer space using CSS.</p>
+<p>You won't see any visual updates to your app at this point corresponding to whether an answer is correct or incorrect.</p>
+<hr />
+<h4><a class="anchor" id="heading-step-5-add-css-styling-to-make-our-form-organized-and-visibly-appealing" href="#heading-step-5-add-css-styling-to-make-our-form-organized-and-visibly-appealing"><span class="glyphicon glyphicon-link"></span></a>Step 5: Add CSS styling to make our form organized and visibly appealing</h4>
+<p>In this step, we will be organizing our app using Flexbox and adding other visual changes to make it unique!</p>
+<p>In order to use Flexbox, we will need to create a container class for everything in our form and also create mini-containers around each set of ingredient answer spaces and answer choices so they are treated each as one unit to be moved. We would not want our answer choices for an ingredient to not be aligned properly under the title.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Change the following code snippet below:</p>
+<div class="highlighter-rouge language-html"><div class="highlight"><pre class="codehilite"><code><span class="nt">&lt;form&gt;</span>
+</code></pre></div></div>
+<p>to</p>
+<div class="highlighter-rouge language-html"><div class="highlight"><pre class="codehilite"><code><span class="nt">&lt;form</span> <span class="na">className=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Also change the following code snippet below:</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Temperature<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"answer-space"</span> <span class="na">id</span><span class="p">=</span><span class="si">{</span><span class="nx">correct_temp</span><span class="si">}</span><span class="p">&gt;</span>
+  <span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nc">RecipeChoices</span>
+  <span class="na">handleChange</span><span class="p">=</span><span class="si">{</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="nx">setInputs</span><span class="p">((</span><span class="nx">prevState</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+      <span class="p">...</span><span class="nx">prevState</span><span class="p">,</span>
+      <span class="p">[</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">name</span><span class="p">]:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+    <span class="p">}))</span>
+  <span class="si">}</span>
+  <span class="na">label</span><span class="p">=</span><span class="s">"temperature"</span>
+  <span class="na">choices</span><span class="p">=</span><span class="si">{</span><span class="nx">ingredients</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+  <span class="na">currentVal</span><span class="p">=</span><span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+<span class="p">/&gt;</span>
+</code></pre></div></div>
+<p>to</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"mini-container"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Temperature<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"answer-space"</span> <span class="na">id</span><span class="p">=</span><span class="si">{</span><span class="nx">correct_temp</span><span class="si">}</span><span class="p">&gt;</span>
+    <span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nc">RecipeChoices</span>
+    <span class="na">handleChange</span><span class="p">=</span><span class="si">{</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span>
+      <span class="nx">setInputs</span><span class="p">((</span><span class="nx">prevState</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+        <span class="p">...</span><span class="nx">prevState</span><span class="p">,</span>
+        <span class="p">[</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">name</span><span class="p">]:</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+      <span class="p">}))</span>
+    <span class="si">}</span>
+    <span class="na">label</span><span class="p">=</span><span class="s">"temperature"</span>
+    <span class="na">choices</span><span class="p">=</span><span class="si">{</span><span class="nx">ingredients</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+    <span class="na">currentVal</span><span class="p">=</span><span class="si">{</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">"</span><span class="s2">temperature</span><span class="dl">"</span><span class="p">]</span><span class="si">}</span>
+  <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>After adding in these new classes, you can now create two CSS selectors for <code>.container</code> and <code>.mini-container</code> and give them both these rules:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>display</code> to <code>flex</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>justify-content</code> to <code>space-evenly</code>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>For the <code>.container</code> selector only, add:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>align-items</code> to <code>flex-start</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>margin</code> to <code>auto</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>position</code> to <code>relative</code>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>And for the <code>.mini-container</code> selector only, add:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>flex-direction</code> to <code>column</code>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Set <code>margin</code> to <code>50px;</code>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Need some help creating these CSS rules? Don't forget, you can let Copilot know what you're trying to do and ask for some examples to get an idea of the code you need.</p>
+<p></p></div></details></div>
+<p>After this, you can make other stylistic changes, like:</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Giving your <code>wrong</code> and <code>correct</code> id selectors new background colors to visually indicate when a user gets an ingredient guess wrong or right.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Making your <code>answer-space</code> class have a background color and set width and height so that it is always visible.</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ For the <code>li</code> elements, setting their <code>list-style</code> to <code>none</code> so there are no weird bullet points next to your radio buttons</div>
+</li>
+</ul>
+<p>But other than that, you have full creative freedom to make your app your own!</p>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI to Get Ideas</strong></summary><div class="well inset-text">
+<p>If you want to get some ideas, try giving Copilot some of your code and asking for styling suggestions. Be sure to ask questions about its suggestions and test them in your app to see how they look.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary>💡 If you want some ideas of what to do, the example project that you have been seeing screenshots of throughout these instructions incorporates these rules...</summary><div class="well inset-text">
+<div class="highlighter-rouge language-css"><div class="highlight"><pre class="codehilite"><code><span class="k">@import</span> <span class="sx">url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap')</span><span class="p">;</span>
+
+<span class="nf">#root</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Poppins'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span><span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-evenly</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="n">flex-start</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.mini-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-evenly</span><span class="p">;</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">8px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.2</span><span class="p">),</span> <span class="m">0</span> <span class="m">6px</span> <span class="m">20px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.19</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.mini-header</span><span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">226</span><span class="p">,</span> <span class="m">195</span><span class="p">,</span> <span class="m">147</span><span class="p">);</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">93%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#wrong</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span><span class="nb">rgb</span><span class="p">(</span><span class="m">219</span><span class="p">,</span> <span class="m">93</span><span class="p">,</span> <span class="m">93</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nf">#correct</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span><span class="nb">rgb</span><span class="p">(</span><span class="m">191</span><span class="p">,</span> <span class="m">116</span><span class="p">,</span> <span class="m">191</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.answer-space</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">226</span><span class="p">,</span> <span class="m">195</span><span class="p">,</span> <span class="m">147</span><span class="p">);</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span><span class="m">3px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span><span class="m">3px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10%</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10%</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#FFFDD0</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">button</span><span class="nc">.newdrink</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">138</span><span class="p">,</span> <span class="m">98</span><span class="p">,</span> <span class="m">12</span><span class="p">,</span> <span class="m">0.942</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.title</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.title-container</span> <span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.drink-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-between</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>📍 <strong>Checkpoint 5</strong>:</p>
+<p>After this, you should now have a beautiful app that allows you to quiz yourself on popular Starbucks drinks!</p>
+<p><a href="/course_images/web102/lab3/checkpoint5.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint5.png" title="Screenshot of checkpoint 5 features on " width="600" alt="Screenshot of checkpoint 5 features on " class="center-block" /></a></p>
+<div class="alert alert-success inset-text">
+🎉 Congratulations, you've completed this lab! 🎉
+</div>
+<p>If you have time left over, continue on to the stretch features to customize and improve your app!</p>
+<hr />
+<h3><a class="anchor" id="2-heading-stretch-features" href="#2-heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h3>
+<h4><a class="anchor" id="heading-step-6-switch-out-input-radio-buttons-for-input-text-box-with-extra-user-input-validation" href="#heading-step-6-switch-out-input-radio-buttons-for-input-text-box-with-extra-user-input-validation"><span class="glyphicon glyphicon-link"></span></a>Step 6: Switch out input radio buttons for input text box with extra user input validation</h4>
+<p>In this step, we'll allow users to type in their answers instead of selecting the appropriate answer choice as a radio button. We will be making our input changes for this step in <code>recipeChoices.jsx</code>.</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Since we now only require one input text box instead of a different input radio button for each choice, we can comment out/get rid of the <code>input</code> elements in our <code>.map()</code> function for all of our choices. All we need to do in that <code>.map()</code> function is list out our choices.</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">{</span><span class="nx">choices</span> <span class="o">&amp;&amp;</span>
+  <span class="nx">choices</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">choice</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">key</span><span class="p">=</span><span class="si">{</span><span class="nx">choice</span><span class="si">}</span><span class="p">&gt;</span>
+  
+      <span class="si">{</span><span class="nx">choice</span><span class="si">}</span>
+      
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">))}</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Next, above where we list out our choices, we need to make another input tag that is for text, and many of the arguments needed for this input tag are the same as the ones needed for the radio button.</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="p">&lt;</span><span class="nt">input</span>
+  <span class="na">type</span><span class="p">=</span><span class="s">"text"</span>
+  <span class="na">name</span><span class="p">=</span><span class="si">{</span><span class="nx">label</span><span class="si">}</span>
+  <span class="na">value</span><span class="p">=</span><span class="si">{</span><span class="nx">currentVal</span><span class="si">}</span>
+  <span class="na">placeholder</span><span class="p">=</span><span class="s">"Guess the ingredient..."</span>
+  <span class="na">onChange</span><span class="p">=</span><span class="si">{</span><span class="nx">handleChange</span><span class="si">}</span>
+  <span class="na">className</span> <span class="p">=</span> <span class="s">"textbox"</span>
+<span class="p">/&gt;</span>
+</code></pre></div></div>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ 
+<p>Next, we want to add some extra validation if a user happens to make a spelling error or generally input some text that doesn't match any of the potential choices. In our <code>onCheckAnswer()</code> function, we want to add and <code>alert()</code> if the input doesn't match anything in our original list of ingredient choices. Try this on your own!</p>
+</div>
+</li>
+</ul>
+<div class="alert alert-info inset-text"><details><summary><strong>🤖 AI Pro Tip: Using AI as a Programming Assistant</strong></summary><div class="well inset-text">
+<p>Try asking Copilot for examples using <code>Array.prototype.includes()</code>. Try to modify the examples to fit what you're trying to do here.</p>
+<p>If you're still stuck, try breaking this step down to tell Copilot what you're trying to do. Use it like a pair programmer as the driver to generate solutions and test them in your code.</p>
+<p></p></div></details></div>
+<div class="alert alert-warning inset-text"><details><summary><strong>💡 Need a bigger hint?</strong></summary><div class="well inset-text">
+<p>Here is the example for temperature:</p>
+<div class="highlighter-rouge language-jsx"><div class="highlight"><pre class="codehilite"><code><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">ingredients</span><span class="p">[</span><span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span><span class="p">].</span><span class="nx">includes</span><span class="p">(</span><span class="nx">inputs</span><span class="p">[</span><span class="dl">'</span><span class="s1">temperature</span><span class="dl">'</span><span class="p">]))</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">For temperature, that isn't even an option!</span><span class="dl">"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p></p></div></details></div>
+<p>Feel free to change this from an alert to some other behavior, like highlighting the text box or some other cool feature!</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Lastly, feel free to go back to your <code>App.css</code> and change up some selectors if you want the text box to look or be placed differently. It already has a <code>.textbox</code> class so you can edit the look or position of the text input using that class name as a selector.</div>
+</li>
+</ul>
+<p>📍 <strong>Checkpoint 6</strong>: At the end of this step, you should have your list of answer choices with a text box above them, that is able to take in user input and still respond as previously by checking the answers and alerting the user if their input doesn't match what is present in the list of choices.</p>
+<p><a href="/course_images/web102/lab3/checkpoint6.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint6.png" title="Screenshot of checkpoint 6 features " width="600" alt="Screenshot of checkpoint 6 features " class="center-block" /></a></p>
+<p><a href="/course_images/web102/lab3/checkpoint6_val.png" target="_blank"><img src="/course_images/web102/lab3/checkpoint6_val.png" title="Screenshot of checkpoint 6 validation feature " width="600" alt="Screenshot of checkpoint 6 validation feature " class="center-block" /></a></p>
+<div class="alert alert-success inset-text">
+🎉 Congratulations 🎉
+<p>You've completed the lab AND stretch goals! 🚀<br />
+</p></div>
+<div class="alert alert-info inset-text">
+<strong>💡 Tip:</strong> Remember to come back and reference this lab when you need to do similar things in your project!
+</div>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">18 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">150%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Feb 11 at 1:58pm EST</span><strong>First Submitted At</strong></li></ul><p><span class="glyphicon glyphicon-star"></span>&nbsp;<strong>Congrats!</strong>&nbsp;Your submission is within the top 20% for your class group.</p><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>2</td><td>13</td><td>22</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" width="250" alt="Hdynuxy " /></div></div></div></div></div><div class="tab-pane" id="projects"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span><span class="section-text" aria-hidden="true"><span aria-hidden="true" class="glyphicon glyphicon-ok glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;Submitted<br /><time class="timeago" datetime="2024-02-11T10:58:27.279862-0800">2024-02-11T10:58:27.279862-0800</time></span><span class="section-action"><button class="btn btn-primary" onClick="LightBox.showLightBoxWithIds('lightbox-projects', 'form-projects')"><span class="glyphicon glyphicon-open" aria-hidden="true"></span>&nbsp;Submit&nbsp;Again</button></span>
+<div class="lightbox" id="lightbox-projects"><form action="/submissions/create_or_update_submission" accept-charset="UTF-8" class="form-horizontal form-submission" id="form-projects" method="post"><div class="title"></div><button aria-label="Close" class="close" type="button"><span aria-hidden="true"> &times;</span></button><h2>Submission</h2><p>Please enter your assignment submission info. After you submit, you can keep working and resubmit at any time.</p><label>GitHub Project URL</label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="git_repo_url" value="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" placeholder="https://github.com/username/Twitter" required="required" class="form-control" pattern="^https?:\/\/github.com\/.{2,}?\/.{2,}$" data-error="Please enter the url to your GitHub Repo (Example: https://github.com/username/TwitterLite)" /><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>GIF URL <span id="upload-status"><span class="light">(Drag a file here to upload. It'll try to convert your video to a GIF.)</span><img class="spinner" src="/images/ajax-loader.gif" /></span></label><div class="form-group has-feedback"><div class="col-sm-12"><input type="text" name="gif_remote_url" id="submission_gif_remote_url" value="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" placeholder="https://i.imgur.com/xyz.gif" required="required" class="form-control" pattern="^https?:\/\/.+?\/.+?\.(gifv?)(.+)?" data-error="Please enter a link to your GIF (Example: https://i.imgur.com/U3a7L.gif)" /><span aria-hidden="true" class="glyphicon form-control-feedback"></span><div class="help-block with-errors"></div></div></div><label>Hours Spent</label><div class="form-group"><div class="col-sm-12"><input type="number" name="hours_spent" value="3.0" placeholder="Number of hours" required="required" class="form-control" min="0" max="99" step="0.1" /></div></div><label>Notes</label><div class="form-group"><div class="col-sm-12"><textarea name="notes" placeholder="Any additional notes" class="form-control noresize" rows="2">
+</textarea></div></div><div class="form-group"><div class="col-sm-12 mt-2"><input type="submit" value="Submit" class="btn btn-primary pull-right" /></div></div><input type="hidden" name="course" value="web102" /><input type="hidden" name="unit" value="3" /><input type="hidden" name="id" value="344259" /><input type="hidden" name="assignment" value="5444" /><input type="hidden" name="redirect_anchor" value="projects" /></form></div></div><!--- 
+This is a template of a project for 2022 Codepath course development.
+In this course, projects are asynchronous, student-driven assignments. 
+
+Note: There is NO # h1 tag, because the course portal uses h1 to render the course name automatically.  
+Pages should always start with ## h2.
+-->
+<!--- This code will automatically pull the assignment due date for project number X -->
+<div class="alert alert-warning inset-text">
+📬 Submit this assignment by <strong><span data-time="2024-02-18T23:59:00-05:00" data-format="longdatetime">Sunday, February 18th at 11:59pm EST</span></strong> using the <em>Submit</em> button 👉
+</div>
+<h2><a class="anchor" id="heading-project-3-flashcards-part-2" href="#heading-project-3-flashcards-part-2"><span class="glyphicon glyphicon-link"></span></a>Project 3: Flashcards! Part 2</h2>
+<h3><a class="anchor" id="heading-overview" href="#heading-overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h3>
+<p>In Flashcards! Part 1, you chose pairs of items to store in a flashcard-like format that users can use to study, learn something new, or play a guessing game. This week, you will extend the functionality of your web app! You will build features that allow users to enter an answer (with exact or fuzzy matching) and move backwards and forwards through the list of cards.</p>
+<p><em>View an exemplar of the project <a href="https://chimerical-cendol-b3becf.netlify.app/" target="_blank">here</a>!</em></p>
+<h4><a class="anchor" id="heading-example-project-ideas-feel-free-to-switch-up-your-theme-if-you-would-like" href="#heading-example-project-ideas-feel-free-to-switch-up-your-theme-if-you-would-like"><span class="glyphicon glyphicon-link"></span></a>Example Project Ideas (feel free to switch up your theme if you would like!)</h4>
+<ul>
+<li>Study aid
+<ul>
+<li>Learn a new language</li>
+<li>Learn firefighting 10s &amp; 18s</li>
+<li>Literally anything</li>
+</ul>
+</li>
+<li>Informative quiz
+<ul>
+<li>Politics (e.g. how much Thermo Fisher Scientific stock does Dr. Oz own?)</li>
+<li>Know your rights</li>
+<li>How much do you know about pumpkins?</li>
+</ul>
+</li>
+<li>Heads Up-style game
+<ul>
+<li>Guess the celebrity
+<ul>
+<li>You’re Colonel Mustard in the conservatory with the lead pipe 👀</li>
+</ul>
+</li>
+<li>What’s this dog?</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-goals" href="#heading-goals"><span class="glyphicon glyphicon-link"></span></a>🎯 Goals</h3>
+<p>By the end of this assignment you will be able to...</p>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Use <code>useState()</code> to create more state variables of different types
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Use state to change the visual appearance of the web app</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Use state to check that changes to other state are valid</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Use the <code>onClick()</code> and <code>onChange()</code> events to call methods to adjust or reset state variables</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create space for user input with the <code>input</code> tag</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ Create more nested components in order to handle increasing complexity</div>
+</li>
+</ul>
+<h3><a class="anchor" id="heading-required-features" href="#heading-required-features"><span class="glyphicon glyphicon-link"></span></a>Required Features</h3>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ <strong>User Input</strong>
+<ul>
+<li>The user can enter their guess in a box <em>before</em> seeing the flipside of the card</li>
+<li>Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect</li>
+</ul>
+</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ <strong>Moving Multiple Ways in the Card List</strong>
+<ul>
+<li>A back button displayed on the card can be used to return to the previous card in a set sequence</li>
+<li>A next button displayed on the card can be used to navigate to the next card in a set sequence</li>
+</ul>
+</div>
+</li>
+</ul>
+<h4><a class="anchor" id="heading-screenshot" href="#heading-screenshot"><span class="glyphicon glyphicon-link"></span></a>Screenshot</h4>
+<p>A simple version of the app with all the required features implemented:</p>
+<div class="alert alert-success inset-text">
+<a href="/course_images/web102/project3/required2.gif" target="_blank"><img src="/course_images/web102/project3/required2.gif" title="Screenshot of app with core features implemented" width="280" alt="Screenshot of app with core features implemented" class="center-block" /></a>
+</div>
+<h3><a class="anchor" id="heading-stretch-features" href="#heading-stretch-features"><span class="glyphicon glyphicon-link"></span></a>Stretch Features</h3>
+<ul class="contains-task-list">
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ A shuffle button can be used to randomize the order of the cards</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ A user’s answer may be counted as correct even when it is slightly different from the target answer</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ A counter displays the user’s current and longest streak of correct responses</div>
+</li>
+<li class="task-list-item">
+<input type="checkbox" disabled="disabled" /><div class="content-item">
+ A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards</div>
+</li>
+</ul>
+<h4><a class="anchor" id="1-heading-screenshot" href="#1-heading-screenshot"><span class="glyphicon glyphicon-link"></span></a>Screenshot</h4>
+<p>A more advanced version of the app with a few stretch features:</p>
+<div class="alert alert-success inset-text">
+<a href="/course_images/web102/project3/stretch2.gif" target="_blank"><img src="/course_images/web102/project3/stretch2.gif" title="Screenshot of app with core features implemented" width="280" alt="Screenshot of app with core features implemented" class="center-block" /></a>
+
+</div>In this example, the app keeps track of score and longest streak, and has looser requirements for answer validation.
+<h3><a class="anchor" id="heading-resources" href="#heading-resources"><span class="glyphicon glyphicon-link"></span></a>Resources</h3>
+<ul>
+<li><a href="https://reactjs.org/docs/forms.html" target="_blank">React Forms</a></li>
+<li><a href="https://react.school/ui/button" target="_blank">React Buttons</a></li>
+<li><a href="https://reactjs.org/docs/hooks-state.html" target="_blank">State Hook: useState()</a></li>
+<li><a href="https://beta.reactjs.org/learn/updating-arrays-in-state" target="_blank">Using Arrays in State Variables</a></li>
+</ul>
+<h3><a class="anchor" id="heading-hints" href="#heading-hints"><span class="glyphicon glyphicon-link"></span></a>💡 Hints</h3>
+<ul>
+<li>Help! I don't know where to start!
+<ul>
+<li>Try sketching out the components you will need to add and drawing the relationships between them.
+<ul>
+<li>What state will you need to keep track of and which component does it belong to?</li>
+</ul>
+</li>
+<li>Refresh your memory of this unit's concepts using the lab. What code will be similar? What do you need to change?</li>
+</ul>
+</li>
+<li>How can I make my flashcards have cool animations for flipping to the front or the back?
+<ul>
+<li>Check out <a href="https://www.w3schools.com/howto/howto_css_flip_card.asp" target="_blank">this resource here</a>! This can be used as a jumping off point for your own project. Also, pay attention to the class names for all of the elements you are using so that they line up with your CSS rules.</li>
+</ul>
+</li>
+<li>I'm stuck on something!
+<ul>
+<li>Don't just skip the Resources section!</li>
+<li>Still need a little extra help getting started or running into an error? Try posting in the <a href="http://codepath.slack.com/" target="_blank">Class Slack Channel</a>.</li>
+</ul>
+</li>
+</ul>
+<div class="alert alert-warning inset-text">
+📣 <strong>Submission Guidelines</strong>: For more details on submission instructions, follow the guidelines on the <a href="/courses/web102/pages/submitting_coursework" class="internal" alt="Submitting Coursework" title="Submitting Coursework" target="_blank">Submitting Coursework</a> page.
+<ul>
+<li>Make sure you are adding and committing files in git as you complete features and milestones.</li>
+<li>Be sure to <strong>include a README</strong> containing a GIF walkthrough of your project.</li>
+<li>Use this <a href="/snippets/web102/readme_templates/project3_readme_template?raw=true" target="_blank">README TEMPLATE</a>.
+<ul>
+<li>It is important that you follow the same layout as the README template so that we can easily access your work.</li>
+<li>Be sure to check off each feature that is implemented in your submission by changing <code>[ ]</code> to <code>[x]</code>. We won't be able to assign points if a feature is unchecked.</li>
+</ul>
+</li>
+</ul>
+<p></p></div>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">18 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">150%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Feb 11 at 1:58pm EST</span><strong>First Submitted At</strong></li></ul><p><span class="glyphicon glyphicon-star"></span>&nbsp;<strong>Congrats!</strong>&nbsp;Your submission is within the top 20% for your class group.</p><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>2</td><td>13</td><td>22</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" width="250" alt="Hdynuxy " /></div></div></div></div></div><div class="tab-pane" id="resources"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><h2><a class="anchor" id="heading-resources" href="#heading-resources"><span class="glyphicon glyphicon-link"></span></a>Resources</h2>
+<p>A list of helpful links relevant to this unit.</p>
+<h4><a class="anchor" id="heading-a-list-of-helpful-links-relevant-to-this-unit" href="#heading-a-list-of-helpful-links-relevant-to-this-unit"><span class="glyphicon glyphicon-link"></span></a>A list of helpful links relevant to this unit</h4>
+<ul>
+<li><a href="https://beta.reactjs.org/learn/reacting-to-input-with-state" target="_blank">React Docs: Reacting to Input with State</a></li>
+<li><a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">React Docs: Sharing State Between Components</a></li>
+<li><a href="https://goshacmd.com/controlled-vs-uncontrolled-inputs-react/" target="_blank">Controlled and Uncontrolled Form Inputs in React Don’t Have to Be Complicated</a></li>
+<li><a href="https://github.com/learn-co-curriculum/react-hooks-state-arrays" target="_blank">React State and Arrays</a></li>
+<li><a href="https://vtechguys.medium.com/javascript-array-methods-mutating-vs-non-mutating-8606d9b78c77" target="_blank">JavaScript: Array Methods | Mutating vs Non-mutating</a></li>
+</ul>
+<br />
+<h4><a class="anchor" id="heading-hints-troubleshooting" href="#heading-hints-troubleshooting"><span class="glyphicon glyphicon-link"></span></a>Hints &amp; Troubleshooting</h4>
+<p>Getting stuck or not sure how to implement a specific feature? Check out the "Hints" section at the bottom of the <a href="#!projects">✏️ Project Instructions</a>.</p>
+<p>Stuck on a bug? Try some of these strats for debugging:</p>
+<ul>
+<li><a href="https://guides.codepath.com/webdev/React-DevTools-for-debugging" target="_blank">Install the React Dev Tools Chrome Extension</a></li>
+<li><a href="https://medium.com/@baphemot/intro-to-debugging-reactjs-applications-67cf7a50b3dd" target="_blank">Intro to debugging React Applications</a></li>
+<li><a href="https://www.educative.io/blog/top-react-mistakes" target="_blank">Top 10 mistakes to avoid when using React</a></li>
+</ul>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">18 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">150%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Feb 11 at 1:58pm EST</span><strong>First Submitted At</strong></li></ul><p><span class="glyphicon glyphicon-star"></span>&nbsp;<strong>Congrats!</strong>&nbsp;Your submission is within the top 20% for your class group.</p><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>2</td><td>13</td><td>22</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" width="250" alt="Hdynuxy " /></div></div></div></div></div><div class="tab-pane" id="career"><div class="panel panel-default"><div class="panel-body markdown-body"><div class="action-bar pull-right hidden-print"><span class="feedback section-action"><a href="#modal" class="feedback-link" title="Submit Feedback" data-toggle="tooltip" data-placement="right" data-container="body"><span title="" class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></span></div><h2><a class="anchor" id="heading-building-your-personal-network-and-making-new-connections" href="#heading-building-your-personal-network-and-making-new-connections"><span class="glyphicon glyphicon-link"></span></a>Building your personal network and making new connections</h2>
+<p>Many students don’t start thinking about building a professional network within the technology industry until later in their career, but it’s good to get started as early as you can. Remember that the more people you meet, the more people who might be able to help you secure your next internship or job.</p>
+<p>So where can you start?</p>
+<h3><a class="anchor" id="heading-your-existing-network" href="#heading-your-existing-network"><span class="glyphicon glyphicon-link"></span></a>Your existing network</h3>
+<p>At this early stage in your career, it’s easy to think that you don’t have any connections in tech. This is almost certainly not true!</p>
+<p>Think of the network you already have:</p>
+<ul>
+<li>College alumni who work in tech</li>
+<li>Friends/classmates who have interned at a tech company</li>
+<li>Professors</li>
+<li>Friends of friends who worked/interned at a target company</li>
+</ul>
+<h3><a class="anchor" id="heading-growing-your-network-through-events-and-activities" href="#heading-growing-your-network-through-events-and-activities"><span class="glyphicon glyphicon-link"></span></a>Growing your network through events and activities</h3>
+<p>You can also build your network by making connections with your peers and other professionals. There are lots of opportunities to meet people:</p>
+<ul>
+<li>
+<p><strong>Attend any career fairs or career workshops on campus</strong>. Remember that companies attend these events specifically to meet students like you; it’s a great opportunity to connect.</p>
+</li>
+<li>
+<p>Through CodePath, sign up to <strong>participate in a virtual career fair and information sessions</strong> which connect you directly with companies.</p>
+</li>
+<li>
+<p>Sign up for <strong>CodePath resume review and interview practice weeks</strong>, and connect with the volunteer. CodePath volunteers are actively working as software engineers or tech recruiters.</p>
+</li>
+<li>
+<p>If you can, <strong>try to attend software conferences and events</strong> nearby. You can often find events on <a href="https://meetup.com" target="_blank">meetup.com</a>, or even on your campus.</p>
+</li>
+<li>
+<p>If you can, consider attending <strong>nearby hackathons</strong>. Hackathons are a great way to meet and talk to people from various companies. You can even try to meet one of the event organizers.</p>
+</li>
+<li>
+<p>Take more <strong>CodePath classes</strong> (as many as you can!) and build connections with coaches and students through these programs.</p>
+</li>
+</ul>
+<p>Once you meet people, add them as a connection on LinkedIn with a short note to remind them of how you met. This is how networks grow.</p>
+<h3><a class="anchor" id="heading-contacting-your-linkedin-connections" href="#heading-contacting-your-linkedin-connections"><span class="glyphicon glyphicon-link"></span></a>Contacting your LinkedIn connections</h3>
+<p>A great feature of LinkedIn is allowing you to find people with whom you have something in common - for example you have a shared connection, or you attended the same university.</p>
+<p>If you are interested in working at a particular company, you can search the company name on LinkedIn and see if you have any 1st or 2nd degree connections there. You can also see if any of your classmates have previously interned at the company.</p>
+<p>Try these sample search terms in the search bar:</p>
+<ul>
+<li>"Target Company Name + CodePath"</li>
+<li>"Target Company Name + University Name"</li>
+<li>"Target Company Name + another Company Name you’ve worked at"</li>
+</ul>
+<p>If you find a first or second degree connection that you either know or that is in your extended network, you can reach out to them via LinkedIn messenger and ask if they have 15 minutes for a phone call to chat. It’s important that you limit the time to 15 minutes — it’s a small ask and doesn’t feel like a big favor for the person you’re calling.</p>
+<p>Often these connections can refer you to a recruiter at that company or otherwise provide valuable advice. If you speak to a 2nd degree connection, you can then add them as a 1st degree connection, and thereby grow your network.</p>
+<h3><a class="anchor" id="heading-contacting-new-people-on-linkedin" href="#heading-contacting-new-people-on-linkedin"><span class="glyphicon glyphicon-link"></span></a>Contacting new people on LinkedIn</h3>
+<p>Another great way to build your personal brand and differentiate yourself is to reach out to people on LinkedIn that you don’t know at all.</p>
+<ul>
+<li>
+<p>Go to the LinkedIn page of a company you are interested in working at, and click on the link to see all employees of that company on LinkedIn</p>
+</li>
+<li>
+<p>Find “Schools” under the filter sidebar to the right, and type in your university. People who you have something in common with are much more likely to be willing to take time out of their day to talk with you or help you.</p>
+</li>
+<li>
+<p>Hit “Connect” and then “Add a note” and ask them to chat on the phone. A typical note might read something like this:</p>
+</li>
+</ul>
+<blockquote>
+<p>Hi! My name is Tati, I’m currently studying computer science at Tufts. I saw you work at Google and I’m really interested in interning there next summer as a software engineering intern.</p>
+<p>I was wondering if you had 15 minutes to chat about your work and what it’s like to work at Google.”</p>
+</blockquote>
+<p>Did you notice the three important things you did there?</p>
+<ul>
+<li>
+<strong>Explained you have something in common:</strong> “I’m currently studying computer science at Tufts”</li>
+<li>
+<strong>Explained why you are contacting them:</strong> “I’m really interested in interning there next summer as a software engineer”</li>
+<li>
+<strong>Explained what you want from them:</strong> “15 minutes to chat about your work and what it’s like to work at Google”.</li>
+</ul>
+<p>Now wait for them to respond! Many people may never get back to you, but some will respond immediately or within days. It’s good to aim to reach out to around five people a week, as many don’t check their LinkedIn regularly.</p>
+</div></div></div><div class="tab-pane" id="report"><div class="panel panel-default"><div class="panel-body"><div class="row"><div class="col-md-11 markdown-body"><h2>Assignment Submission Summary</h2><p>The following is the summary of your scored submissions for this unit:</p></div></div><div class="row"><div class="col-md-8"><ul class="list-group"><li class="list-group-item"><span class="label label-info label-badge">18 / 12</span><strong>Score</strong></li><li class="list-group-item"><span class="label label-primary label-badge">150%</span><strong>Percent Score</strong></li><li class="list-group-item"><span class="label label-badge label-success">Feb 11 at 1:58pm EST</span><strong>First Submitted At</strong></li></ul><p><span class="glyphicon glyphicon-star"></span>&nbsp;<strong>Congrats!</strong>&nbsp;Your submission is within the top 20% for your class group.</p><h4>Course Submission Scores Breakdown</h4><p>The following aggregates the scores of all students enrolled in your class group:</p><table class="table table-striped"><thead><tr><th>Min</th><th>Mean</th><th>Max</th></tr></thead><tbody><tr><td>2</td><td>13</td><td>22</td></tr></tbody></table></div><div class="col-md-2"><a href="https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-ccabreragarc" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;Project Repo</a><img src="https://submissions.us-east-1.linodeobjects.com/web102/HdynUxY-.gif" width="250" alt="Hdynuxy " /></div></div></div></div></div></div></div></div></div><div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="feedback-modal" role="dialog" tabindex="-1"><div class="modal-dialog" role="document"><div class="modal-content"><form action="/feedback/create.js" accept-charset="UTF-8" id="feedback-form" method="post" data-remote="true"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="exampleModalLabel">Give us feedback on this page</h4><p class="info"><span aria-hidden="true" class="glyphicon glyphicon-info-sign"></span><span>All fields are optional, but the more detailed your feedback the better.</span></p></div><div class="modal-body"><input type="hidden" name="course" value="WEB102 | Intermediate Web Development" /><input type="hidden" name="cohort" value="For-Credit-Intermediate-Web-Development-Spring-2024" /><input type="hidden" name="location" value="Florida Atlantic University" /><input type="hidden" name="role" value="Participant" /><input type="hidden" name="unit" value="3" /><input type="hidden" name="page" /><input type="hidden" name="tab" id="feedback-input-tab" /><input type="hidden" name="iamnotabot" id="iamnotabot" value="" /><div class="row"><div class="col-md-6"><div class="form-group"><label>Reason</label><select class="form-control" name="reason"><option value=""></option><option value="rate">Rate this section</option><option value="suggest">Share a suggestion or frustration</option><option value="report">Report outdated or broken content</option></select></div></div><div class="col-md-6"><div class="form-group"><label>Rating</label><input class="rating" data-animate="false" data-show-caption="false" data-show-clear="false" data-size="sm" max="5" min="0" name="rating" step="1" type="number" /></div></div></div><div class="form-group"><label>Feedback</label><textarea class="form-control" name="feedback" rows="3"></textarea></div><div class="checkbox"><label><input name="needs_review" type="checkbox" value="true">Page needs review?</input></label></div></div><div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary" type="submit">Submit feedback</button></div></form></div></div></div></body><script src="/assets-compiled/application.js?v=5955841a"></script>  <script>
+    $(document).data("gaid", 'G-C6WBPLRZK9')
+  </script>
+</html>
